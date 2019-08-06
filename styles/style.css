@@ -1,0 +1,734 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* general styles */
+
+/* colors */
+/* Dried blood - #500801
+Poop - #815600
+Dark brown - #1d0303
+White - #ffffff */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Roboto', arial, sans-serif;
+    color: #fff;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2, button, h3{
+    font-family: 'Petit Formal Script', cursive;
+}
+
+h1{
+    font-size: 9rem;
+    line-height: 9rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 4rem;
+}
+
+/* general styles */
+
+/* header styles begin */
+
+header{
+    background: #815600;
+    width: 100%;
+    min-height: 600px;
+    height: 70vh;
+    position: relative;
+}
+
+.wrapper{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+nav{
+    margin-left: 50px;
+}
+
+.top-nav{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.top-nav li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.top-nav a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.top-nav a{
+    color: #ffffff;
+}
+
+.top-nav a:hover{
+    color: tomato;
+}
+
+.hero{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.hero-hed{
+    width: calc(50% - 20px);
+    float: left;
+    position: relative;
+    top: 100px;
+    margin-right: 20px;
+}
+
+.hero-hed h1{
+    font-family: 'Petit Formal Script', cursive;
+    text-align: right;
+}
+
+.hero-image{
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+.hero-icons{
+    width: 10%;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.hero-icons i{
+    color: white;
+    font-size: 22px;
+    display: block;
+    padding: 5px 0;
+}
+
+.hero-icons a:link{
+    text-decoration: none;
+}
+
+/* header styles end */
+
+/* section styles begin */
+
+.intro{
+    width: 100%;
+    background: #500801;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.intro-image{
+    width: calc(25% - 40px);
+    float: left;
+    margin-right: 40px;
+}
+
+.intro-image img{
+    display: block;
+    width: 100%;
+}
+
+.intro-content{
+    width: 75%;
+    float: left;
+}
+
+.intro-content p{
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+.intro-content h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+button{
+    margin-top: 20px;
+    background: #1d0303;
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    font-size: 2rem;
+}
+
+.intro button{
+    position: relative;
+    bottom: -20px;
+}
+
+.mini-gallery{
+    width: 100%;
+    background:#815600;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.mini-gallery h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center; 
+}
+
+.mini-gallery img{
+    width: calc(100% / 3 - 30px);
+    margin: 0 15px;
+    float: left;
+}
+
+/* this are aside styles */
+
+aside{
+    width: 100%;
+    background: #500801;
+    padding-bottom: 25px;
+}
+
+.icon-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.icon-links li{
+    float: left;
+    width: calc(100% / 3);
+    padding: 50px 0;
+}
+
+.icon-links a{
+    text-decoration: none;
+}
+.icon-links a:link, a:visited{
+    color: #fff;
+}
+
+.icon-links h3{
+    margin: 0;
+    padding: 0;
+}
+
+.icon-links i{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+/* feature boxes styles */
+
+.features{
+    background: #815600;
+    width: 100%;
+}
+
+.features h2{
+    padding-top: 20px;
+    margin: 0;
+}
+
+.features button{
+    margin-bottom: 20px;
+}
+
+.features img{
+    width: 100%;
+    display: block;
+}
+
+.features p{
+    font-weight: 300;
+    width: 95%;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+}
+
+.featurebox{
+    width: 50%;
+    float: left;
+}
+
+.feature-top-row, .feature-bottom-row{
+    width: 100%;
+}
+
+.featurebox1, .featurebox4{
+    padding: 40px 60px;
+}
+
+/* end of main body styles */
+
+/* footer styles begin */
+
+.contact{
+    background: #500801;
+    position: relative;
+}
+
+.bottom-nav{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    top: 20px;
+    left: 0;
+    padding: 50px 0;
+    width: 20%;
+}
+
+.bottom-nav li{
+    padding: 5px 0;
+}
+
+.bottom-nav a:link{
+    text-decoration: none;
+}
+
+.bottom-nav, .newsletter-box, .contact-address{
+    float: left;
+}
+
+.newsletter-box{
+    width: 55%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter-box input{
+    width: 45%;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.newsletter-box button{
+    display: inline-block;
+    width: 35%;
+}
+
+.newsletter-box h2{
+    margin: 0 0 5px 0;
+}
+
+.contact-address{
+    width: 25%;
+    text-align: right;
+    position: relative;
+    right: 0;
+    top: 50px;
+}
+
+.contact-address h3{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contact-address p{
+    margin: 0;
+}
+
+.copyrite{
+    text-align: center;
+    background: #1d0303;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* footer styles end */
+
+/* media queries begin */
+
+@media (max-width:900px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    header{
+        background: #815600;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        z-index: 10;
+    }
+
+    .menu-toggle i{
+        font-size: 3rem;
+    }
+
+    .hero{
+        width: 90%;
+    }
+    
+
+    .top-nav{
+        display: none;
+        width: 200px;
+        height: 200px;
+        background: tomato;
+    }
+
+     .checkbox:checked ~ ul{
+        display: block;
+    }
+
+    .hero-image, .hero-hed {
+        float: none;
+        position: relative;
+    }
+
+    .hero-hed{
+        top: 50px;
+        width: 100%;
+    }
+
+    .hero-image{
+        padding-top: 40px;
+        width: 80%;
+    }
+
+    h1{
+        width: 80%;
+        margin-top: 0;
+        padding-top: 40px;
+        font-size: 7rem;
+        line-height: 7rem;
+        margin-left: auto;
+    }
+
+    h2{
+    font-size: 4rem;
+    }
+
+    h3{
+    font-size: 3rem;
+    }
+
+    .hero-icons{
+    display: none;
+    }
+
+    .icon-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+    .icon-links li{
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    }
+
+    .intro{
+    width: 100%;
+    background: #500801;
+    padding-top: 75px;
+    padding-bottom: 100px;
+    position: relative;
+    }
+
+    .intro h2{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .intro-image{
+        float: none;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .intro button{
+        display: block;
+        margin: 0 auto;
+        padding: 10px 10px;
+        margin-top: 30px;
+    }
+
+    .intro  a{
+        text-decoration: none;
+    }
+
+    .intro-content{
+        width: 75%;
+        float: none;
+        margin: 0 auto;
+    }
+
+
+    .features{
+        width: 100%;
+    }
+
+    .featurebox{
+        float: none;
+    }
+
+    .feature-top-row{
+        width: 100%;
+        position: relative;
+    }
+
+    .featurebox1{
+        width: 100%;
+        position: relative;
+        padding-top: 330px;
+    }
+
+    .featurebox2 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        display: block;
+    }
+
+    .featurebox2 img {
+        width: 100%;
+        display: block;
+        max-height: 340px;
+        object-fit: cover;
+    }
+
+    .feature-bottom-row{
+        position: relative;
+        width: 100%;
+    }
+
+    .featurebox3{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .featurebox3 img{
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        max-height: 340px;
+    }
+
+    .featurebox4{
+        padding-top: 340px;
+        width: 100%;
+    }
+
+    .features button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .features h2{
+        text-align: center;
+    }
+
+    .contact p{
+        font-size: 1.5rem;
+    }
+
+    footer .bottom-nav, .newsletter-box, .contact-address{
+        float: none;
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+
+    .newsletter-box{
+        padding-top: 0;
+    }
+
+    .bottom-nav{
+        display: block;
+        text-align: center;
+    }
+
+    .bottom-nav li{
+        display: inline-block;
+        width: 20%;
+        padding: 0px;
+    }
+
+    .newsletter-box input{
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+        margin-top: 20px;
+    }
+
+    .contact-address{
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 600px){
+    
+    h1{
+        font-size: 5.5rem;
+        text-align: right;
+    }
+
+    .hero-hed{
+        width: 100%;
+        position: relative;
+        right: 12px;
+    }
+
+    .hero-image{
+        width: 90%;
+        position: relative;
+        left: -80px;
+    }
+
+    .hero{
+        padding-bottom: 0;
+    }
+
+    .intro button{
+        padding: 10px 25px;
+    }
+
+    .mini-gallery .img-2 {
+        width: 44%;
+        margin: 0 3%;
+        float: right;
+    }
+
+    .mini-gallery .img-1{
+        float: right;
+        width: 44%;
+        margin: 0 3%;
+    } 
+
+    .mini-gallery .img-off{
+        display: none;
+    }
+
+    .icon-links{
+        padding: 15px 0;
+    }
+
+    .features h2{
+    font-size: 3.2rem;
+    width: 100%;
+    }
+
+    @media (max-width: 400px){
+        h2{
+            font-size: 3.5rem;
+        }
+
+        .features h2{
+        font-size: 3rem;
+        width: 100%;
+        }
+
+        .intro{
+            padding-bottom: 45px;
+        }
+
+        .icon-links h3{
+            font-weight: 300;
+        }
+
+        .featurebox2 img{
+            max-height: 180px;
+        }
+
+        .featurebox3 img{
+            max-height: 180px;
+        }
+
+        .featurebox1, .featurebox4{
+            padding-top: 160px;
+        }
+
+        .newsletter-box input{
+            width: 90%;
+            height: 50px;
+            text-align: center;
+        }
+
+        .bottom-nav{
+            width: 100%;
+        }
+
+        .bottom-nav li{
+            padding: 0 10px;
+            font-size: 1.8rem;
+        }
+
+        .newsletter-box button{
+        display: inline-block;
+        width: 55%;
+        }
+}
+
+
+    @media (max-width: 370px){
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .hero-hed{
+        width: auto;
+        text-align: right;
+    }
+}
+
+    @media (max-width: 300px){
+
+    h1{
+        font-size: 4rem;
+    }
+    
+    }
+}
