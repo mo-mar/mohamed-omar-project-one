@@ -162,9 +162,9 @@ nav{
 
 .intro-image img{
     object-fit: cover;
-    height: 300px;
+    height: 250px;
     width: 100%;
-    object-position: 35%;
+   
 }
 
 .intro-content{
@@ -195,7 +195,7 @@ button{
 
 .intro button{
     position: relative;
-    bottom: -20px;
+    bottom: 0px;
 }
 
 .mini-gallery{
@@ -298,7 +298,7 @@ aside{
 
 .featurebox2{
     float: left;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 50px;
     padding-right: 25px;
     
@@ -311,7 +311,7 @@ aside{
 
 .featurebox4{
     float: right;
-    padding-top: 45px;
+    padding-top: 100px;
     padding-left: 45px;
 }
 /* end of main body styles */
@@ -652,15 +652,15 @@ aside{
     }
 
     .mini-gallery .img-2 {
-        width: 44%;
-        margin: 0 3%;
+        width: 46%;
+        margin: 0 2%;
         float: right;
     }
 
     .mini-gallery .img-1{
         float: right;
-        width: 44%;
-        margin: 0 3%;
+        width: 46%;
+        margin: 0 2%;
     } 
 
     .mini-gallery .img-off{
@@ -682,8 +682,8 @@ aside{
         }
 
         .features h2{
-        font-size: 3rem;
-        width: 100%;
+            font-size: 3rem;
+            width: 100%;
         }
 
         .intro{
@@ -695,11 +695,11 @@ aside{
         }
 
         .featurebox1 img{
-            max-height: 280px;
+            max-height: 180px;
         }
 
         .featurebox3 img{
-            max-height: 280px;
+            max-height: 180px;
         }
 
         .featurebox1, .featurebox4{
